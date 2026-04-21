@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <!-- <link rel="stylesheet" href="style1.css"> -->
+    <style>
+        body {
+    background-color: lightgray;
+}
+h1 {
+    color :darkgray;
+    text-align: center;
+    text-decoration: dashed;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: normal;
+}
+
+h2 {
+    color: white;
+    background-color: #330099;
+    text-align: center;
+    text-decoration: overline;
+    text-transform: capitalize;
+}
+p {
+    color:black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#frmbtn {
+    color: white;
+    background-color: #330099;
+    text-transform: uppercase;
+}
+
+/* #outer
+{
+    font-size: 25px;
+}
+
+#inner
+{
+    font-size: 10px;
+} */
+    </style>
+
+
+</head>
+<body>
+    <h1 style = "color: #330099;" >My Education</h1>
+    <br />
+    <p><big>BS CS 6th semester</big> Continued... at </p>
+    <a href = "https://uosahiwal.edu.pk/" target = "_main" > University of Sahiwal </a>
+    <br />
+    <h2>Here is my University: </h2>
+    <img src="/University of Sahiwal.jpg" height="300px" alt = "University of Sahiwal picture"/>
+
+    <br />
+    <h2>Following departments are being served in our University: </h2>
+
+    <ol>
+        <li> Department of Computing</li>
+            <ul>
+                <li> Department of Computer Science</li>
+                <li> Department of Information Technology</li>
+                <li> Department of Software Engineering</li>
+            </ul>
+        <li> Department of Law</li>
+        <li> Department of Chemistry</li>
+        <li> Department of Business Administration</li>
+        <li> Department of Physics</li>
+    </ol>
+
+    <br />
+    <h2> Students of BS-CS Morning 5th semester are:</h2>
+
+<caption> Students data
+    <table>
+        <tr>
+            <th> Roll number </th>
+            <th> Name </th>
+            <th> Address </th>
+        </tr>
+        <tr> <td> 01 </td> <td> Hamza </td> <td> Okara </td> </tr>
+        <tr> <td> 03 </td> <td> Syed Zaryab Hassan </td> <td> Faisalabad </td> </tr>
+        <tr> <td> 05 </td> <td> Shahid </td> <td> Jahanian </td> </tr>
+        <tr> <td> 08 </td> <td> Shahzad </td> <td> Arifwala </td> </tr>
+        <tr> <td> 23 </td> <td> Hamza Noor </td> <td> Arifwala </td> </tr>
+    </table>
+</caption>
+
+    <!-- Main form container -->
+    <form action="#" method="post">
+        <h2>Website Design Request</h2>
+        
+        <!-- Request Number Section -->
+        <div>
+            <label for="request-number"> <b> Please Enter Nuber </b></label><br>
+            <input type="text" id="request-number" name="request-number" value="[0001 010-10000]" readonly>
+            <!-- 'readonly' makes this field uneditable -->
+        </div><br>
+        
+        <!-- Company Information -->
+        <div>
+            <label for="company"> <b> Company </b></label><br>
+            <input type="text" id="company" name="company" placeholder="Enter company name">
+        </div><br>
+        
+        <!-- Business Type Dropdown -->
+        <div>
+            <label for="business-type"> <b> Type of Business</b> </label><br>
+            <select id="business-type" name="business-type">
+                <option value="">Please Select</option>
+                <!-- Add more business types as needed -->
+                <option value="retail">Retail</option>
+                <option value="service">Service</option>
+                <option value="nonprofit">Nonprofit</option>
+            </select>
+        </div><br>
+        
+        <!-- Website Type Dropdown -->
+        <div>
+            <label for="website-type"> <b> Type of Website You Need? </b> </label><br>
+            <select id="website-type" name="website-type">
+                <option value="">Please Select</option>
+                <!-- Add more website types as needed -->
+                <option value="ecommerce">E-commerce</option>
+                <option value="portfolio">Portfolio</option>
+                <option value="blog">Blog</option>
+            </select>
+        </div><br>
+        
+        <!-- Navigation Bar Checkboxes -->
+        <div>
+            <label> <b> Choose Items for the Navigation Bar </b> </label><br>
+            <!-- Each checkbox has its own label -->
+            <input type="checkbox" id="nav-about" name="nav-items" value="about">
+            <label for="nav-about">About</label><br>
+            
+            <input type="checkbox" id="nav-user-guide" name="nav-items" value="user-guide">
+            <label for="nav-user-guide">User Guide</label><br>
+            
+            <input type="checkbox" id="nav-form" name="nav-items" value="form">
+            <label for="nav-form">Form</label><br>
+            
+            <input type="checkbox" id="nav-blog" name="nav-items" value="blog">
+            <label for="nav-blog">Blog</label><br>
+            
+            <input type="checkbox" id="nav-pricing" name="nav-items" value="pricing">
+            <label for="nav-pricing">Pricing</label><br>
+            
+            <input type="checkbox" id="nav-more" name="nav-items" value="more">
+            <label for="nav-more">More Items</label>
+        </div><br>
+        
+        <!-- Additional Services Checkboxes -->
+        <div>
+            <label> <b> Additional Services </b> </label><br>
+            <input type="checkbox" id="service-barrier" name="additional-services" value="barrier-design">
+            <label for="service-barrier">Barrier Design</label><br>
+            
+            <input type="checkbox" id="service-landing" name="additional-services" value="landing-page">
+            <label for="service-landing">Landing Page Design</label><br>
+            
+            <input type="checkbox" id="service-ads" name="additional-services" value="ad-management">
+            <label for="service-ads">Advertisement Management</label><br>
+            
+            <input type="checkbox" id="service-video" name="additional-services" value="video">
+            <label for="service-video">Video</label><br>
+            
+            <input type="checkbox" id="service-analytics" name="additional-services" value="analytics">
+            <label for="service-analytics">Analytics</label>
+        </div><br>
+        
+        <!-- Additional Comments Textarea -->
+        <div>
+            <label for="comments"> <b> Additional Comments </b> </label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your valueable comments here"></textarea>
+        </div><br>
+        
+        <!-- Submit Button -->
+        <div>
+            <button id = "frmbtn"> Submit </button>
+        </div><br>
+        
+    </form>
+
+    <!-- <div id="outer"> Outer one 
+        <div id="inner"> Inner one </div>
+    </div> -->
+</body>
+</html>
